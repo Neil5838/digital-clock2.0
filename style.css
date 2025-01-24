@@ -1,0 +1,106 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: red; */
+    background-image: url('https://t4.ftcdn.net/jpg/02/22/68/39/360_F_222683930_mXWfHnOk9spCYOyEhqXNSWbWhZd4dFKF.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 100px;
+    font-family: "Archivo", serif;
+}
+
+.container {
+    margin-top: -150px;
+}
+
+#date {
+    color: white;
+    font-weight: 400;
+    font-size: 1.25rem;
+}
+
+.time-container {
+    margin-top: 12px;
+
+}
+
+.timer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.timer>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.timer>div>span {
+    display: block;
+    width: 100%;
+    padding: 8px 16px;
+}
+
+.timer>div>span:nth-child(1) {
+    font-weight: 900;
+    font-size: 3rem;
+
+}
+
+.timer>div span:nth-child(1) {
+    background-color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+
+}
+
+.timer>div span:nth-child(2) {
+    background-color: cyan;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+
+}
+
+.timer p {
+    background-color: white;
+    padding: 8px 12px;
+    border-radius: 4px;
+}
+
+@media (max-width: 766px) {
+    body {
+        justify-content: center;
+        padding: 0px;
+    }
+
+    .container {
+        margin-top: -300px;
+    }
+
+    .timer {
+        gap: 4px;
+    }
+
+    .timer > div > span {
+        padding: 7px 12px;
+    }
+    .timer>div>span:nth-child(1) {
+        font-weight: 900;
+        font-size: 2.75rem;
+    
+    }
+}
